@@ -1,0 +1,11 @@
+RewriteEngine On
+ 
+<IfModule mod_rewrite.c>
+    
+</IfModule>
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^(.*)$ index.php?url=$1
